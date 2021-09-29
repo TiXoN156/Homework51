@@ -6,13 +6,13 @@ import java.util.regex.Pattern;
 public class Main {
 
     public static void main(String[] args) {
-        String email = "tihon.bobrov6876@gmail.com";
+        String email = "tihon.bobrov6876@gmail.combjhgjhvjh";
         emailValidation(email);
     }
 
     private static void emailValidation(String email) {
         String result = null;
-        Pattern pattern = Pattern.compile("^([\\w-\\.]+)@([\\w&&[^_]]+).[a-z]{2,}$",
+        Pattern pattern = Pattern.compile("^([\\w-\\.]+)@([\\w&&[^_]]+).[a-z]{2,4}$",
                 Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(email);
         if (matcher.find()) {
